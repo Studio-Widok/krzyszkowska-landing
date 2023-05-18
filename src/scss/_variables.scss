@@ -1,0 +1,21 @@
+$contentWidth: 60rem;
+// $contentWidthWide: 120rem;
+// $contentWidthText: 45rem;
+$spacing: 3rem;
+// $wrapperSpacing: 3rem;
+
+$resLarge: 1280px;
+$resTablet: 900px;
+$resPhone: 450px;
+
+// @font-face {
+//   font-family: "Helvetica Neue";
+//   src: url("../media/HelveticaNeueLTProRoman.otf");
+//   font-weight: normal;
+//   font-style: normal;
+//   font-display: swap;
+// }
+
+@mixin fontDefault() {
+  font-family: sans-serif;
+}
