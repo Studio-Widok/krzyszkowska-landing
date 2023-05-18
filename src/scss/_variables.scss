@@ -8,14 +8,42 @@ $resLarge: 1280px;
 $resTablet: 900px;
 $resPhone: 450px;
 
-// @font-face {
-//   font-family: "Helvetica Neue";
-//   src: url("../media/HelveticaNeueLTProRoman.otf");
-//   font-weight: normal;
-//   font-style: normal;
-//   font-display: swap;
-// }
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../media/FoundersGrotesk-Regular.otf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
+  src: url("../media/FoundersGrotesk-Bold.otf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Sectra Fine";
+  src: url("../media/GT-Sectra-Fine-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT Sectra Fine";
+  src: url("../media/GT-Sectra-Fine-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 @mixin fontDefault() {
-  font-family: sans-serif;
+  font-family: "Founders Grotesk", sans-serif;
+}
+
+@mixin fontAccent() {
+  font-family: "GT Sectra Fine", serif;
 }

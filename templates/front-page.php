@@ -1,7 +1,9 @@
 <?php // template name: front page
-  get_header();
+get_header();
 ?>
 
-<div class="content column"><?=get_the_content()?></div>
+<div class="content column">
+  <?= get_the_content() ?>
+</div>
 
-<?php get_footer();?>
+<?php get_footer(); ?>
