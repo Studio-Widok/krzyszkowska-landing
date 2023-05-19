@@ -41,6 +41,7 @@
       </div>
       <?= widok_img($part['image'], ['srcset' => true, 'class' => 'img-full']) ?>
     </div>
+    <div class="r"></div>
     <div class="flex flex-wrap column-outer-growing" id="intro-pink-icons">
       <?php foreach ($part['icons'] as $icon) { ?>
         <div class="intro-pink-icon column-inner-growing">
