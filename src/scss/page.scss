@@ -19,6 +19,10 @@
   padding: 4em 0;
 }
 
+.nop {
+  overflow: hidden
+}
+
 .title {
   @include fontAccent();
   font-size: max(1.5rem, min(4vw, 4em));
@@ -80,4 +84,40 @@
   font-size: 1.25em;
   text-align: center;
   padding: .7em 1.3em .4em 1.5em;
+}
+
+.message {
+  position: relative;
+  width: 30em;
+  max-width: 90%;
+  padding: .5em 2em 1.5em 2em;
+  margin: -2em;
+  margin-left: auto;
+  border-radius: 10px;
+  opacity: 0;
+  left: 50vw;
+  transition: .3s;
+
+  &.shown {
+    left: 0;
+    opacity: 1;
+  }
+
+  &--pink {
+    background-color: #F6817E;
+    color: #fff;
+  }
+
+  &__text {
+    font-style: italic;
+    font-size: 1.25em;
+  }
+
+  &__author {
+    display: block;
+    width: 8em;
+    height: auto;
+    margin-left: auto;
+    margin-top: .5em;
+  }
 }
