@@ -24,6 +24,11 @@ body {
   padding: $spacing 0;
 }
 
+.bg-beige {
+  background-color: #CBB0A7;
+  padding: $spacing 0;
+}
+
 /* general */
 @import "base";
 @import "mobile";

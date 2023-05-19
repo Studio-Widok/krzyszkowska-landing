@@ -13,8 +13,8 @@
 
       <div class="flex">
         <div class="product__image-col column-inner-growing">
-          <?= widok_img($product['image'], ['srcset' => true]) ?>
-          <?php foreach ($product['colors'] as $key => $value) { ?>
+          <?= widok_img($product['image'], ['srcset' => true, 'class' => 'img-full']) ?>
+          <?php foreach ($product['color'] as $key => $value) { ?>
             <div class="product__color"></div>
           <?php } ?>
         </div>

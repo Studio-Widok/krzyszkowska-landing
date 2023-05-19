@@ -30,7 +30,7 @@
       <?= $part['description_2'] ?>
     </div>
     <div class="r"></div>
-    <?= widok_img($part['image_2'], ['srcset' => true, 'id' => 'krzyszkowska-image-2']) ?>
+    <?= widok_img($part['image_2'], ['srcset' => true, 'id' => 'krzyszkowska-image-2', 'class' => 'img-full']) ?>
     <div class="r"></div>
     <a href="<?= $part['button_link'] ?>">
       <div class="button">
