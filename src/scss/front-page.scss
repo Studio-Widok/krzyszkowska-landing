@@ -4,6 +4,33 @@
   }
 }
 
+#intro-logo-tall {
+  display: block;
+  width: 20em;
+  max-width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#intro-pink-title {
+  position: relative;
+  margin-bottom: -.6em;
+}
+
+#intro-pink-icons {
+  .icon-img {
+    width: 10em;
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .icon-label {
+    font-size: 1.25em;
+  }
+}
+
 #super-icons {
   .super-icon {
     width: 25%;

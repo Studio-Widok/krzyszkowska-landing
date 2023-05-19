@@ -27,7 +27,7 @@
               <?= $product['message'] ?>
             </div>
             <img
-              src="<?= get_template_directory_uri() ?>/media/logo-krzyszkowska-white.png"
+              src="<?= get_template_directory_uri() ?>/media/logo_krzyszkowska_white.png"
               alt="" class="message__author">
           </div>
         </div>

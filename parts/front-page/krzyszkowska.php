@@ -1,6 +1,6 @@
 <div class="bg-gray">
   <div class="content column">
-    <img src="<?= get_template_directory_uri() ?>/media/logo-krzyszkowska.png"
+    <img src="<?= get_template_directory_uri() ?>/media/logo_krzyszkowska.png"
       alt="logo" id="logo-krzyszkowska">
     <div class="text text--width">
       <?= $part['description'] ?>
@@ -13,7 +13,7 @@
         <?= $part['message'] ?>
       </div>
       <img
-        src="<?= get_template_directory_uri() ?>/media/logo-krzyszkowska-white.png"
+        src="<?= get_template_directory_uri() ?>/media/logo_krzyszkowska_white.png"
         alt="" class="message__author">
     </div>
   </div>
