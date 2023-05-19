@@ -8,6 +8,25 @@ body {
   min-height: calc(var(--vh, 1vh) * 100);
 }
 
+.img-full {
+  width: 100%;
+  height: auto;
+}
+
+.bg-gray {
+  background-color: #FAF6F6;
+  padding: $spacing 0;
+}
+
+.bg-pink {
+  background-color: #F6817E;
+  color: #fff;
+  padding: $spacing 0;
+}
+
 /* general */
 @import "base";
 @import "mobile";
+
+/* templates */
+@import "front-page";

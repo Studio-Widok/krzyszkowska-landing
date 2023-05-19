@@ -1,10 +1,14 @@
 <nav>
-  <div id="nav-logo"></div>
+  <div id="nav-logo">
+    <img src="<?= get_template_directory_uri() ?>/media/logo_wide.png"
+      alt="logo">
+  </div>
   <div id="nav-links">
-    <div class="nav-link">intro</div>
-    <div class="nav-link">krzyszkowska</div>
-    <div class="nav-link">produkty</div>
-    <div class="nav-link">supermoce</div>
+    <?php foreach ($parts as $partKey => $part) { ?>
+      <div class="nav-link" data-scroll-target="<?= $partKey ?>">
+        <?= $part['nav_title'] ?>
+      </div>
+    <?php } ?>
     <div class="nav-separator">|</div>
     <div class="nav-link">eng</div>
   </div>

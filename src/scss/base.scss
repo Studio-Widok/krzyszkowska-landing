@@ -16,18 +16,23 @@ a {
 .rsep {
   height: 6rem;
 }
+
 .r {
   height: 3rem;
 }
+
 .rmin {
   height: 1.5rem;
 }
+
 .rmik {
   height: 0.75rem;
 }
+
 .rel {
   position: relative;
 }
+
 .abs {
   position: absolute;
   top: 0;
@@ -35,6 +40,7 @@ a {
   bottom: 0;
   left: 0;
 }
+
 .no-overflow {
   overflow: hidden;
 }
@@ -57,15 +63,19 @@ h6 {
 .text-justify {
   text-align: justify;
 }
+
 .text-center {
   text-align: center;
 }
+
 .text-left {
   text-align: left;
 }
+
 .text-right {
   text-align: right;
 }
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -128,39 +138,51 @@ h6 {
 .flex {
   display: flex;
 }
+
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 .flex-column {
   flex-direction: column;
 }
+
 .flex-justify-start {
   justify-content: flex-start;
 }
+
 .flex-justify-end {
   justify-content: flex-end;
 }
+
 .flex-justify-center {
   justify-content: center;
 }
+
 .flex-justify-space-between {
   justify-content: space-between;
 }
+
 .flex-justify-space-evenly {
   justify-content: space-evenly;
 }
+
 .flex-align-start {
   align-items: flex-start;
 }
+
 .flex-align-end {
   align-items: flex-end;
 }
+
 .flex-align-center {
   align-items: center;
 }
+
 .flex-align-stretch {
   align-items: stretch;
 }
+
 // .col2 {
 //   width: 50%;
 // }
@@ -198,29 +220,37 @@ h6 {
 .column {
   padding: 0 $spacing;
 }
+
 .column-left {
   padding-left: $spacing;
 }
+
 .column-right {
   padding-right: $spacing;
 }
+
 .column-half {
   padding: 0 math.div($spacing, 2);
 }
+
 .column-left-half {
   padding-left: math.div($spacing, 2);
 }
+
 .column-right-half {
   padding-right: math.div($spacing, 2);
 }
+
 .column-inner,
 .column-inner-growing {
   padding: 0 math.div($spacing, 3);
 }
+
 .column-outer,
 .column-outer-growing {
   padding: 0 math.div($spacing, 3) * 2;
 }
+
 .column-double {
   padding: 0 $spacing * 2;
 }
@@ -233,19 +263,36 @@ h6 {
   max-width: $contentWidth;
   margin: 0 auto;
 
-  // &--wide {
-  //   max-width: $contentWidthWide;
-  // }
+  &--wide {
+    max-width: $contentWidthWide;
+  }
 
   // &--slim {
   //   max-width: $contentWidthSlim;
   // }
 }
 
+.text {
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &--width {
+    max-width: $contentWidthText;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (min-width: $resLarge) {
   .column-inner-growing {
     padding: 0 $spacing;
   }
+
   .column-outer-growing {
     padding: 0;
   }
@@ -255,6 +302,7 @@ h6 {
   html {
     font-size: 0.9em;
   }
+
   .rsep {
     height: 3em;
   }
@@ -268,29 +316,37 @@ h6 {
   .column {
     padding: 0 2em;
   }
+
   .column-left {
     padding-left: 2em;
   }
+
   .column-right {
     padding-right: 2em;
   }
+
   .column-half {
     padding: 0 1em;
   }
+
   .column-left-half {
     padding-left: 1em;
   }
+
   .column-right-half {
     padding-right: 1em;
   }
+
   .column-inner,
   .column-inner-growing {
     padding: 0 0.6667em;
   }
+
   .column-outer,
   .column-outer-growing {
     padding: 0 1.3333em;
   }
+
   .column-double {
     padding: 0 4em;
   }
