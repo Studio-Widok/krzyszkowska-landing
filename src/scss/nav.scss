@@ -1,0 +1,51 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+
+  #nav-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: $contentWidthWide;
+    margin: 0 auto;
+    padding: 2em $spacing;
+    transition: .3s;
+
+    @at-root body.scrolled & {
+      padding-top: .5em;
+      padding-bottom: .5em;
+    }
+
+    #nav-logo {
+      max-width: 40%;
+      width: 28em;
+      height: auto;
+      flex-shrink: 1;
+    }
+
+    #nav-links {
+      display: flex;
+      align-items: center;
+
+      .nav-link {
+        text-transform: uppercase;
+        padding: 1em;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+
+      .nav-separator {
+        padding: 1em 2em;
+      }
+    }
+  }
+}
+
+#nav-spacer {
+  height: 7.2em;
+}
