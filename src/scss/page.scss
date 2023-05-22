@@ -40,6 +40,7 @@
 
   .sans-serif {
     @include fontDefault();
+    display: inline-block;
   }
 }
 
@@ -72,6 +73,10 @@
   &--large {
     font-size: 1.25em;
   }
+}
+
+b {
+  font-weight: 500;
 }
 
 .uppercase {

@@ -3,7 +3,8 @@
     <div class="title">
       <?= $part['title'] ?>
     </div>
-    <div class="text text--width">
+    <div class="r"></div>
+    <div class="text text--width text--large text-center">
       <?= $part['description'] ?>
     </div>
   </div>
@@ -13,12 +14,13 @@
   <div class="content content--wide column-outer">
     <div class="flex" id="super-icons">
       <?php foreach ($part['icons'] as $icon) { ?>
-        <div class="super-icon">
+        <div class="super-icon column-inner">
           <?= widok_img($icon['icon'], ['srcset' => true, 'class' => 'super-icon__icon img-full']) ?>
           <div class="icon-label">
             <?= $icon['label'] ?>
           </div>
-          <div class="icon-description">
+          <div class="rmik"></div>
+          <div class="icon-description text">
             <?= $icon['description'] ?>
           </div>
         </div>
@@ -26,3 +28,5 @@
     </div>
   </div>
 </div>
+
+<div class="rsep"></div>

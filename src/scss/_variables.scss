@@ -35,6 +35,14 @@ $resPhone: 450px;
 
 @font-face {
   font-family: "Founders Grotesk";
+  src: url("../media/FoundersGrotesk-Medium.otf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Founders Grotesk";
   src: url("../media/FoundersGrotesk-Bold.otf");
   font-weight: 700;
   font-style: normal;

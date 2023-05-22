@@ -106,5 +106,22 @@
 #super-icons {
   .super-icon {
     width: 25%;
+
+    &__icon {
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+
+    .icon-label {
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      word-spacing: .2em;
+      font-size: 1.25em;
+      font-weight: 500;
+    }
+
+    .icon-description {
+      font-size: 1.25em;
+    }
   }
 }
