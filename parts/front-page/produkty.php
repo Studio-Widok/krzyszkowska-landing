@@ -17,15 +17,19 @@
         <div class="flex">
           <div class="product__image-col column-inner-growing">
             <?= widok_img($product['image'], ['srcset' => true, 'class' => 'img-full']) ?>
-            <?php foreach ($product['color'] as $key => $value) { ?>
-              <div class="product__color"></div>
-            <?php } ?>
+            <div class="product__colors">
+              <?php foreach ($product['color'] as $key => $value) { ?>
+                <div class="product__color"
+                  style="background-color: <?= $value['color'] ?>;"></div>
+              <?php } ?>
+            </div>
           </div>
           <div class="product__content-col column-inner-growing">
             <div class="text text--width-slim text--large">
               <?= $product['description'] ?>
             </div>
-            <div class="message message--brown product-message">
+            <div class="message product-message"
+              style="background-color: <?= $product['color'][0]['color'] ?>;">
               <div class="message__text">
                 <?= $product['message'] ?>
               </div>
