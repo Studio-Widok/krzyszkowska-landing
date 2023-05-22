@@ -298,41 +298,41 @@ h6 {
 
 @media (max-width: $resPhone) {
   .column {
-    padding: 0 2em;
+    padding: 0 2rem;
   }
 
   .column-left {
-    padding-left: 2em;
+    padding-left: 2rem;
   }
 
   .column-right {
-    padding-right: 2em;
+    padding-right: 2rem;
   }
 
   .column-half {
-    padding: 0 1em;
+    padding: 0 1rem;
   }
 
   .column-left-half {
-    padding-left: 1em;
+    padding-left: 1rem;
   }
 
   .column-right-half {
-    padding-right: 1em;
+    padding-right: 1rem;
   }
 
   .column-inner,
   .column-inner-growing {
-    padding: 0 0.6667em;
+    padding: 0 0.6667rem;
   }
 
   .column-outer,
   .column-outer-growing {
-    padding: 0 1.3333em;
+    padding: 0 1.3333rem;
   }
 
   .column-double {
-    padding: 0 4em;
+    padding: 0 4rem;
   }
 }
 

@@ -12,7 +12,7 @@
   <div class="r"></div>
 
   <div class="content content--wide column-outer">
-    <div class="flex" id="super-icons">
+    <div class="flex flex-wrap" id="super-icons">
       <?php foreach ($part['icons'] as $icon) { ?>
         <div class="super-icon column-inner">
           <?= widok_img($icon['icon'], ['srcset' => true, 'class' => 'super-icon__icon img-full']) ?>

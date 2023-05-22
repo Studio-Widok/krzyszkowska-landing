@@ -30,16 +30,38 @@
   .icon-label {
     font-size: 1.25em;
   }
+
+  @media (max-width: $resPhone) {
+    display: block;
+
+    .intro-pink-icon {
+      width: 100%;
+    }
+
+    .icon-img {
+      display: none;
+    }
+  }
 }
 
 
 // krzyszkowska
+@media (max-width: $resPhone) {
+  #krzyszkowska-gray {
+    padding-top: 0;
+  }
+}
+
 #logo-krzyszkowska {
   display: block;
   width: 30em;
   max-width: 80%;
   height: auto;
   margin: 0 auto;
+
+  @media (max-width: $resPhone) {
+    display: none;
+  }
 }
 
 #krzyszkowska-image {
@@ -48,6 +70,28 @@
   max-width: 80%;
   height: auto;
   margin: 0 auto;
+
+  @media (max-width: $resPhone) {
+    display: none;
+  }
+}
+
+#krzyszkowska-image-mobile-container {
+  position: relative;
+
+  #krzyszkowska-image-mobile {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  #logo-krzyszkowska-mobile {
+    position: absolute;
+    left: 2em;
+    bottom: 2em;
+    width: 67%;
+  }
 }
 
 #krzyszkowska-beige {
@@ -61,16 +105,29 @@
     margin-bottom: max(-11em, -11vw);
     z-index: -1;
   }
+
+  @media (max-width: $resPhone) {
+    background-color: transparent;
+
+    #krzyszkowska-beige-image {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
 }
 
-#intro-message {
+#krzyszkowska-message {
   margin-top: -10em;
+
+  @media (max-width: $resPhone) {
+    margin: 3em 0 0 0;
+  }
 }
 
 
 // produkty
 .product {
-  margin: 10em 0;
+  margin: min(10em, 10vw) 0;
 
   &__image-col {
     position: relative;
@@ -106,6 +163,7 @@
 #super-icons {
   .super-icon {
     width: 25%;
+    margin-bottom: 3em;
 
     &__icon {
       border-radius: 10px;
@@ -122,6 +180,47 @@
 
     .icon-description {
       font-size: 1.25em;
+    }
+  }
+}
+
+
+// mobile
+@media (max-width: $resTablet) {
+  #super-icons {
+    .super-icon {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: $resPhone) {
+
+  .text-center,
+  .title,
+  .subtitle {
+    text-align: left;
+  }
+
+  .product {
+    margin: 2em 0 6em 0;
+
+    .product__flex {
+      display: block;
+
+      .product__image-col {
+        width: 100%;
+      }
+
+      .product__content-col {
+        width: 100%;
+      }
+    }
+  }
+
+  #super-icons {
+    .super-icon {
+      width: 100%;
     }
   }
 }

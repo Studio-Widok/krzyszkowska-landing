@@ -104,22 +104,22 @@
     }
 
     .column-#{$key} {
-      padding-left: 3em !important;
-      padding-right: 3em !important;
+      padding-left: 3rem !important;
+      padding-right: 3rem !important;
 
       @media (max-width: 768px) {
-        padding-left: 2em !important;
-        padding-right: 2em !important;
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
       }
     }
 
     .column-half-#{$key} {
-      padding-left: 1.5em !important;
-      padding-right: 1.5em !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
 
       @media (max-width: 768px) {
-        padding-left: 1em !important;
-        padding-right: 1em !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
       }
     }
   }
@@ -127,4 +127,4 @@
 
 @include mobile-basic($resLarge, "large");
 // @include mobile-basic($resTablet, "tablet");
-// @include mobile-basic($resPhone, "phone");
+@include mobile-basic($resPhone, "phone");

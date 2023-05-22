@@ -76,9 +76,17 @@ $resPhone: 450px;
 @mixin fontDefault() {
   font-family: "Founders Grotesk", sans-serif;
   font-weight: 300;
+
+  b {
+    font-weight: 500;
+  }
 }
 
 @mixin fontAccent() {
   font-family: "GT Sectra Fine", serif;
   font-weight: 300;
+
+  b {
+    font-weight: 700;
+  }
 }
