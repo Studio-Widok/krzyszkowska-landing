@@ -47,6 +47,19 @@
   margin: 0 auto;
 }
 
+#krzyszkowska-beige {
+  position: relative;
+  z-index: 0;
+
+  #krzyszkowska-beige-image {
+    position: relative;
+    display: block;
+    margin-top: max(-20em, -20vw);
+    margin-bottom: max(-11em, -11vw);
+    z-index: -1;
+  }
+}
+
 #intro-message {
   margin-top: -10em;
 }

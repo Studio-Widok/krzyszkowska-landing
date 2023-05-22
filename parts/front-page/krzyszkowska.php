@@ -25,20 +25,26 @@
 
 <div class="nop">
   <div class="content content--wide column nocolumn-tablet">
-    <div class="bg-beige">
+    <div class="bg-beige" id="krzyszkowska-beige">
       <div class="content column">
-        <?= $part['title'] ?>
+        <div class="title">
+          <?= $part['title'] ?>
+        </div>
       </div>
-      <div class="text text--wide">
+      <div class="rmin"></div>
+      <div class="text text--width text--large text-center column">
         <?= $part['description_2'] ?>
       </div>
       <div class="r"></div>
-        <?= widok_img($part['image_2'], ['srcset' => true, 'id' => 'krzyszkowska-image-2', 'class' => 'img-full']) ?>
-        <div class="r"></div> <a href="<?= $part['button_link'] ?>">
+      <?= widok_img($part['image_2'], ['srcset' => true, 'id' => 'krzyszkowska-beige-image', 'class' => 'img-full']) ?>
+      <div class="r"></div>
+      <div class="flex flex-justify-center">
+        <a href="<?= $part['button_link'] ?>">
           <div class="button">
             <?= pll__('kup teraz') ?>
           </div>
-          </a>
-        </div>
+        </a>
       </div>
     </div>
+  </div>
+</div>
