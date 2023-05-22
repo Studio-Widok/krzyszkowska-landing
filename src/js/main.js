@@ -12,20 +12,20 @@ import createScrollItem from 'widok-scroll-item';
 //   if (bg) event.target.style.backgroundImage = 'url(' + bg + ')';
 // });
 
-$('#intro-message');
-
-createScrollItem('#intro-message', {
-  onScroll: item => {
-    if (item.offset > widok.s + window.innerHeight * 0.9) {
-      if (item.isShown) {
-        item.el.removeClass('shown');
-        item.isShown = false;
+$('.message').each((_index, DOMElement) => {
+  createScrollItem(DOMElement, {
+    onScroll: item => {
+      if (item.offset > widok.s + window.innerHeight * 0.9) {
+        if (item.isShown) {
+          item.el.removeClass('shown');
+          item.isShown = false;
+        }
+      } else {
+        if (!item.isShown) {
+          item.el.addClass('shown');
+          item.isShown = true;
+        }
       }
-    } else {
-      if (!item.isShown) {
-        item.el.addClass('shown');
-        item.isShown = true;
-      }
-    }
-  },
+    },
+  });
 });

@@ -1,5 +1,5 @@
 <div class="nop">
-  <div class="content column-outer-growing">
+  <div class="content content--wide column-outer-growing">
     <?php foreach ($part['products'] as $product) { ?>
       <div class="product">
 
@@ -12,6 +12,8 @@
           </div>
         </div>
 
+        <div class="r"></div>
+
         <div class="flex">
           <div class="product__image-col column-inner-growing">
             <?= widok_img($product['image'], ['srcset' => true, 'class' => 'img-full']) ?>
@@ -20,10 +22,10 @@
             <?php } ?>
           </div>
           <div class="product__content-col column-inner-growing">
-            <div class="text">
+            <div class="text text--width-slim text--large">
               <?= $product['description'] ?>
             </div>
-            <div class="message message--brown">
+            <div class="message message--brown product-message">
               <div class="message__text">
                 <?= $product['message'] ?>
               </div>
@@ -34,12 +36,16 @@
           </div>
         </div>
 
+        <div class="r"></div>
+
         <div class="column-inner-growing">
-          <a href="<?= $product['button_link'] ?>">
-            <div class="button">
-              <?= pll__('kup teraz') ?>
-            </div>
-          </a>
+          <div class="flex flex-justify-center">
+            <a href="<?= $product['button_link'] ?>">
+              <div class="button">
+                <?= pll__('kup teraz') ?>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     <?php } ?>

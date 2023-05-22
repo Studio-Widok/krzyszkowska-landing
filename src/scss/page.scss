@@ -28,6 +28,7 @@
   font-size: max(1.5rem, min(4vw, 4em));
   text-align: center;
   line-height: 1.2;
+  margin-bottom: -.2em;
 
   p:first-child {
     margin-top: 0;
@@ -40,6 +41,11 @@
   .sans-serif {
     @include fontDefault();
   }
+}
+
+.subtitle {
+  font-size: max(1.25rem, min(2vw, 2em));
+  text-align: center;
 }
 
 .text {
@@ -84,11 +90,18 @@
   font-size: 1.25em;
   text-align: center;
   padding: .7em 1.3em .4em 1.5em;
+  transition: .3s;
+
+  &:hover {
+    background-color: #B08978;
+    color: #fff;
+    border-color: #fff;
+  }
 }
 
 .message {
   position: relative;
-  width: 30em;
+  width: 31em;
   max-width: 90%;
   padding: .5em 2em 1.5em 2em;
   margin: -2em;
@@ -105,6 +118,11 @@
 
   &--pink {
     background-color: #F6817E;
+    color: #fff;
+  }
+
+  &--brown {
+    background-color: #B08978;
     color: #fff;
   }
 
