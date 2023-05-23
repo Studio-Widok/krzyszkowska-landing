@@ -196,6 +196,9 @@
   &__image-col {
     position: relative;
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 
     .product__colors {
       position: absolute;
@@ -208,6 +211,14 @@
         height: 3em;
         border-radius: 50%;
         margin: .5em;
+      }
+    }
+
+    img {
+      margin-bottom: -1em;
+
+      @media (max-width: $resTablet) {
+        margin: 3em 0 0 0;
       }
     }
   }

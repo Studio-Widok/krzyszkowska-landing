@@ -14,7 +14,7 @@
 
         <div class="r"></div>
 
-        <div class="flex product__flex">
+        <div class="flex flex-align-stretch product__flex">
           <div class="product__image-col column-inner-growing">
             <?= widok_img($product['image'], ['srcset' => true, 'class' => 'img-full']) ?>
             <div class="product__colors">
