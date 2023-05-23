@@ -1,4 +1,4 @@
-<div class="nop">
+<div class="nop" id="part-supermoce">
   <div class="content column">
     <div class="title">
       <?= $part['title'] ?>

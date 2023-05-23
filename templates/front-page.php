@@ -8,10 +8,12 @@ $parts = [
   'supermoce'    => get_field('supermoce'),
 ];
 
-get_part('nav', ['parts' => $parts]);
 ?>
 
+<div id="part-intro"></div>
+
 <?php
+get_part('nav', ['parts' => $parts]);
 get_part('front-page/intro', ['part' => $parts['intro']]);
 get_part('front-page/krzyszkowska', ['part' => $parts['krzyszkowska']]);
 get_part('front-page/produkty', ['part' => $parts['produkty']]);

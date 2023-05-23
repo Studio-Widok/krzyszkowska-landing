@@ -1,4 +1,4 @@
-<div class="nop">
+<div class="nop" id="part-produkty">
   <div class="content content--wide column-outer-growing">
     <?php foreach ($part['products'] as $product) { ?>
       <div class="product">

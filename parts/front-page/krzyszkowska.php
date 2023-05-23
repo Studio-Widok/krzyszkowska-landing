@@ -1,3 +1,4 @@
+<div id="part-krzyszkowska"></div>
 <div class="bg-gray nop" id="krzyszkowska-gray">
   <div class="content">
     <div id="krzyszkowska-image-mobile-container" class="less-phone">

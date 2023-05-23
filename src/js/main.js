@@ -1,16 +1,11 @@
 import 'lazysizes';
 import $ from 'cash-dom';
-// import smoothscroll from 'smoothscroll-polyfill';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import widok from 'widok';
 import createScrollItem from 'widok-scroll-item';
 
-// smoothscroll.polyfill();
-
-// document.addEventListener('lazybeforeunveil', event => {
-//   const bg = event.target.getAttribute('data-bg');
-//   if (bg) event.target.style.backgroundImage = 'url(' + bg + ')';
-// });
+smoothscroll.polyfill();
 
 $('.message').each((_index, DOMElement) => {
   createScrollItem(DOMElement, {
@@ -28,4 +23,29 @@ $('.message').each((_index, DOMElement) => {
       }
     },
   });
+});
+
+function openNav() {
+  if (isNavOpen) return;
+  $('#burger, nav').addClass('opened');
+  isNavOpen = true;
+}
+
+function closeNav() {
+  if (!isNavOpen) return;
+  $('#burger, nav').removeClass('opened');
+  isNavOpen = false;
+}
+
+let isNavOpen = false;
+$('#burger').on('click', () => {
+  if (isNavOpen) closeNav();
+  else openNav();
+});
+
+$('.nav-link--scroll').on('click', event => {
+  const targetId = event.currentTarget.dataset.scrollTarget;
+  const target = $(`#part-${targetId}`).offset().top - 47;
+  closeNav();
+  window.scrollTo({ top: target, behavior: 'smooth' });
 });
