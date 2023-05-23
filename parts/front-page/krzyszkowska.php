@@ -28,11 +28,14 @@
           src="<?= get_template_directory_uri() ?>/media/logo_krzyszkowska_white.png"
           alt="" class="message__author">
       </div>
+
+
+      <?= widok_img($part['image_mobile_2'], ['srcset' => true, 'class' => 'img-full less-phone']) ?>
     </div>
   </div>
 </div>
 
-<div class="r"></div>
+<div class="r more-phone"></div>
 
 <div class="nop">
   <div class="content content--wide column nocolumn-large">

@@ -9,13 +9,14 @@
 #intro-logo-tall-left {
   display: block;
   width: 20em;
-  max-width: 80%;
+  max-width: 70%;
   height: auto;
   margin: 0 auto;
 }
 
 #intro-logo-tall-left {
   margin-left: 0;
+  margin-top: .5em;
 }
 
 #intro-pink {
@@ -24,6 +25,7 @@
 
   .title {
     margin-top: -.8em;
+    font-size: 4em;
   }
 
   @media (max-width: $resPhone) {
@@ -31,7 +33,7 @@
     padding-top: min(24em, 24vw);
 
     .title {
-      margin-top: -1.7em;
+      margin-top: -1.75em;
       line-height: 1.1;
 
       u {
@@ -113,6 +115,8 @@
 @media (max-width: $resPhone) {
   #krzyszkowska-gray {
     padding-top: 0;
+    padding-bottom: 0;
+    background: none;
   }
 }
 
@@ -171,7 +175,8 @@
   }
 
   @media (max-width: $resPhone) {
-    background-color: transparent;
+    background: none;
+    padding-top: 0;
 
     #krzyszkowska-beige-image {
       margin-top: 0;
@@ -215,26 +220,50 @@
     }
 
     img {
+      margin-top: 2em;
       margin-bottom: -1em;
 
       @media (max-width: $resTablet) {
-        margin: 3em 0 0 0;
+        margin: 4em 0 0 0;
       }
     }
   }
 
   &__content-col {
     width: 50%;
-  }
 
-  .product-message {
-    margin: 1em auto;
-    color: #fff;
+    >.text {
+      margin-left: 0;
+    }
+
+    .product-message {
+      margin: 1em -2em;
+      color: #fff;
+      max-width: calc(100% + 4em);
+
+    }
+
+    @media (max-width: $resTablet) {
+      >.text {
+        margin-left: auto;
+      }
+
+      .product-message {
+        margin: 1em auto;
+        max-width: 100%;
+      }
+    }
   }
 }
 
 
 // supermoce
+#part-supermoce {
+  .title {
+    line-height: 1.4;
+  }
+}
+
 #super-icons {
   .super-icon {
     width: 25%;

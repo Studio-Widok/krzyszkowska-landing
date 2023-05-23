@@ -3,18 +3,22 @@
     <div class="title">
       <?= $part['title'] ?>
     </div>
-    <div class="r"></div>
-    <div class="uppercase text-center">
-      <?= $part['top_text'] ?>
+
+    <div class="more-tablet">
+      <div class="r"></div>
+      <div class="uppercase text-center">
+        <?= $part['top_text'] ?>
+      </div>
+      <div class="r"></div>
+      <div class="flex flex-justify-center"> <a
+          href="<?= $part['button_link'] ?>">
+          <div class="button">
+            <?= pll__('kup teraz') ?>
+          </div>
+        </a>
+      </div>
     </div>
-    <div class="r"></div>
-    <div class="flex flex-justify-center"> <a
-        href="<?= $part['button_link'] ?>">
-        <div class="button">
-          <?= pll__('kup teraz') ?>
-        </div>
-      </a>
-    </div>
+
     <div class="r"></div>
   </div>
 
@@ -28,7 +32,25 @@
       <div class="title">
         <?= $part['title_2'] ?>
       </div>
+
+      <div class="less-tablet">
+        <div class="r"></div>
+        <div class="uppercase text-center">
+          <?= $part['top_text'] ?>
+        </div>
+        <div class="r"></div>
+        <div class="flex flex-justify-center"> <a
+            href="<?= $part['button_link'] ?>">
+            <div class="button">
+              <?= pll__('kup teraz') ?>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <div class="r"></div>
+      <div class="r more-tablet"></div>
+
       <div class="more-phone">
         <img src="<?= get_template_directory_uri() ?>/media/logo_tall_white.png"
           alt="logo" id="intro-logo-tall">
@@ -38,7 +60,10 @@
           src="<?= get_template_directory_uri() ?>/media/logo_tall_left_white.png"
           alt="logo" id="intro-logo-tall-left">
       </div>
+
       <div class="r"></div>
+      <div class="r more-tablet"></div>
+
       <div class="text text--width-slim text--large text-center">
         <?= $part['description'] ?>
       </div>

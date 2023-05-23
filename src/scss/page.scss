@@ -25,11 +25,11 @@
 
 .title {
   @include fontAccent();
-  font-size: max(3rem, min(8vw, 4em));
+  font-size: max(2.5rem, min(8vw, 4em));
   text-align: center;
   line-height: 1.2;
   margin-bottom: -.2em;
-
+  letter-spacing: -.01em;
 
   p:first-child {
     margin-top: 0;
@@ -42,6 +42,7 @@
   .sans-serif {
     @include fontDefault();
     display: inline-block;
+    line-height: 0.9;
   }
 }
 
@@ -103,6 +104,14 @@ u {
     color: #fff;
     border-color: #fff;
   }
+
+  @at-root .bg-pink & {
+    border-color: #fff;
+  }
+
+  @media (max-width: $resTablet) {
+    padding: .5em 1.1em .2em 1.3em;
+  }
 }
 
 .message {
@@ -146,6 +155,8 @@ footer {
   padding: 1em 0;
 
   .footer-social {
+    margin-left: 1em;
+
     .social-link {
       margin: 0 .5em;
 

@@ -10,7 +10,15 @@
         </div>
       <?php } ?>
       <div class="nav-separator">|</div>
-      <div class="nav-link">eng</div>
+      <?php
+      $langs = pll_the_languages([
+        'raw'          => true,
+        'hide_current' => true,
+      ]);
+      foreach ($langs as $lang) {
+        ?>
+        <a href="<?= $lang['url'] ?>" class="nav-link"><?= $lang['slug'] ?></a>
+      <?php } ?>
     </div>
   </div>
 </nav>
@@ -18,7 +26,9 @@
 <div id="mobile-navbar" class="column">
   <img id="nav-logo-mobile"
     src="<?= get_template_directory_uri() ?>/media/logo_wide.png" alt="logo">
-  <div class="nav-link">eng</div>
+  <?php foreach ($langs as $lang) { ?>
+    <a href="<?= $lang['url'] ?>" class="nav-link"><?= $lang['slug'] ?></a>
+  <?php } ?>
   <div id="burger">
     <div></div>
     <div></div>

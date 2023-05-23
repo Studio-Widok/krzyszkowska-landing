@@ -20,7 +20,4 @@ get_part('front-page/produkty', ['part' => $parts['produkty']]);
 get_part('front-page/supermoce', ['part' => $parts['supermoce']]);
 ?>
 
-<div class="content column">
-</div>
-
 <?php get_footer(); ?>
