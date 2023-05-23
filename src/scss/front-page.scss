@@ -5,7 +5,8 @@
   }
 }
 
-#intro-logo-tall {
+#intro-logo-tall,
+#intro-logo-tall-left {
   display: block;
   width: 20em;
   max-width: 80%;
@@ -13,33 +14,96 @@
   margin: 0 auto;
 }
 
-#intro-pink-title {
-  position: relative;
-  margin-bottom: -.6em;
+#intro-logo-tall-left {
+  margin-left: 0;
 }
 
-#intro-pink-icons {
-  .icon-img {
-    width: 10em;
-    max-width: 90%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
+#intro-pink {
+  margin-top: max(-8em, -8vw);
+  padding-top: min(8em, 8vw);
 
-  .icon-label {
-    font-size: 1.25em;
+  .title {
+    margin-top: -.8em;
   }
 
   @media (max-width: $resPhone) {
-    display: block;
+    margin-top: max(-24em, -24vw);
+    padding-top: min(24em, 24vw);
 
-    .intro-pink-icon {
-      width: 100%;
+    .title {
+      margin-top: -1.7em;
+      line-height: 1.1;
+
+      u {
+        text-decoration: none;
+      }
+
+      >* {
+        display: block;
+      }
+
+      .sans-serif {
+        line-height: .8;
+      }
+    }
+  }
+}
+
+#intro-2-image {
+  display: block;
+  width: 100%;
+
+  @media (max-width: $resTablet) {
+    max-width: 40em;
+    margin: 0 auto;
+  }
+}
+
+#intro-2-icons {
+  width: 22em;
+  flex-shrink: 0;
+
+  .intro-2-icon {
+    margin-bottom: 3em;
+
+    &:last-child {
+      margin-bottom: 0;
     }
 
     .icon-img {
-      display: none;
+      width: 7em;
+      max-width: 90%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .icon-label {
+      font-size: 1.25em;
+    }
+  }
+
+  @media (max-width: $resTablet) {
+    width: 100%;
+    max-width: 40em;
+    margin: 2em auto;
+
+    .intro-2-icon {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .icon-label {
+      text-align: left;
+      width: 100%;
+      padding-left: 1em;
+    }
+  }
+
+  @media (max-width: $resPhone) {
+    .intro-2-icon .icon-img {
+      width: 6em;
     }
   }
 }
@@ -120,7 +184,7 @@
   margin-top: -10em;
 
   @media (max-width: $resPhone) {
-    margin: 3em 0 0 0;
+    margin: 0;
   }
 }
 
@@ -192,15 +256,6 @@
       width: 50%;
     }
   }
-}
-
-@media (max-width: $resPhone) {
-
-  .text-center,
-  .title,
-  .subtitle {
-    text-align: left;
-  }
 
   .product {
     margin: 2em 0 6em 0;
@@ -216,6 +271,16 @@
         width: 100%;
       }
     }
+  }
+
+}
+
+@media (max-width: $resPhone) {
+
+  .text-center,
+  .title,
+  .subtitle {
+    text-align: left;
   }
 
   #super-icons {

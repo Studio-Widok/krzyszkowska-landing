@@ -2,7 +2,7 @@
 <div class="bg-gray nop" id="krzyszkowska-gray">
   <div class="content">
     <div id="krzyszkowska-image-mobile-container" class="less-phone">
-      <?= widok_img($part['image'], ['srcset' => true, 'id' => 'krzyszkowska-image-mobile']) ?>
+      <?= widok_img($part['image_mobile'], ['srcset' => true, 'id' => 'krzyszkowska-image-mobile']) ?>
       <img
         src="<?= get_template_directory_uri() ?>/media/logo_krzyszkowska_white.png"
         alt="logo" id="logo-krzyszkowska-mobile">

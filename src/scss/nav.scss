@@ -95,6 +95,10 @@ nav {
 
 #nav-spacer {
   height: 7.2em;
+
+  @media (max-width: $resTablet) {
+    height: 4em;
+  }
 }
 
 #mobile-navbar {

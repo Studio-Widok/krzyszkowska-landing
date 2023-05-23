@@ -19,18 +19,24 @@
   </div>
 
   <div class="content content--wide column">
-    <?= widok_img($part['image'], ['srcset' => true, 'class' => 'img-full']) ?>
+    <?= widok_img($part['image'], ['srcset' => true, 'class' => 'img-full more-phone']) ?>
+    <?= widok_img($part['image_mobile'], ['srcset' => true, 'class' => 'img-full less-phone']) ?>
   </div>
 
-  <div class="r"></div>
-
-  <div class="bg-gray">
-    <div class=" content column">
-      <img src="<?= get_template_directory_uri() ?>/media/logo_tall.png"
-        alt="logo" id="intro-logo-tall">
-      <div class="r"></div>
+  <div class="bg-pink" id="intro-pink">
+    <div class="content column">
       <div class="title">
         <?= $part['title_2'] ?>
+      </div>
+      <div class="r"></div>
+      <div class="more-phone">
+        <img src="<?= get_template_directory_uri() ?>/media/logo_tall_white.png"
+          alt="logo" id="intro-logo-tall">
+      </div>
+      <div class="less-phone">
+        <img
+          src="<?= get_template_directory_uri() ?>/media/logo_tall_left_white.png"
+          alt="logo" id="intro-logo-tall-left">
       </div>
       <div class="r"></div>
       <div class="text text--width-slim text--large text-center">
@@ -39,18 +45,22 @@
     </div>
   </div>
 
-  <div class="bg-pink">
-    <div class="content">
-      <div class="column">
-        <div class="title" id="intro-pink-title">
-          <?= $part['title_3'] ?>
-        </div>
+  <div class="content">
+    <div class="column">
+      <div class="r"></div>
+      <div class="title" id="intro-2-title">
+        <?= $part['title_3'] ?>
+      </div>
+      <div class="r"></div>
+    </div>
+    <div class="flex flex-align-center flex-tablet column-outer"
+      id="intro-2-flex">
+      <div class="column-inner" id="intro-2-image">
         <?= widok_img($part['image_2'], ['srcset' => true, 'class' => 'img-full']) ?>
       </div>
-      <div class="r more-phone"></div>
-      <div class="flex flex-wrap column-outer-growing" id="intro-pink-icons">
+      <div class="column-inner" id="intro-2-icons">
         <?php foreach ($part['icons'] as $icon) { ?>
-          <div class="intro-pink-icon column-inner-growing">
+          <div class="intro-2-icon">
             <?= widok_img($icon['icon'], ['class' => 'icon-img']) ?>
             <div class="text-center icon-label">
               <?= $icon['label'] ?>
@@ -60,4 +70,6 @@
       </div>
     </div>
   </div>
+
+  <div class="r"></div>
 </div>
