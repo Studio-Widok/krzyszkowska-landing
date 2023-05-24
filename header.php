@@ -14,12 +14,12 @@ if (is_front_page()) {
   <link rel="icon" type="image/png" href="<?= $url ?>/media/favicon.png" />
   <meta property="og:title" content="<?= $ogtitle ?>" />
   <meta property="og:type" content="website" />
-  <!-- <meta property="og:image" content="<?= $url ?>/media/ogimg.png" />
+  <meta property="og:image" content="<?= $url ?>/media/ogimg.jpg" />
   <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" /> -->
+  <meta property="og:image:height" content="630" />
   <meta property="og:url" content="<?= wp_get_canonical_url() ?>" />
-  <meta name="viewport"
-    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="description" content="<?= get_option('blogdescription') ?>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="color-scheme" content="light only">
   <script>
     const TEMPLATE_DIRECTORY_URI = '<?= $url ?>';

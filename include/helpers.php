@@ -1,8 +1,9 @@
 <?php
-function join_attribs($attr) {
+function join_attribs($attr)
+{
   $result = '';
   foreach ($attr as $key => $value) {
-    if (empty($value)) {
+    if ($value !== '' && empty($value)) {
       continue;
     }
 
@@ -28,7 +29,8 @@ function join_attribs($attr) {
  *   attr {['string' => 'string']}
  * ]
  */
-function widok_img($imageArray, $options = []) {
+function widok_img($imageArray, $options = [])
+{
   if (empty($imageArray)) {
     return;
   }

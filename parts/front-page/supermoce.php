@@ -1,8 +1,8 @@
 <div class="nop" id="part-supermoce">
   <div class="content column">
-    <div class="title">
+    <h2 class="title">
       <?= $part['title'] ?>
-    </div>
+    </h2>
     <div class="r"></div>
     <div class="text text--width text--large text-center">
       <?= $part['description'] ?>

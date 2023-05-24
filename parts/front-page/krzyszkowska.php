@@ -41,9 +41,9 @@
   <div class="content content--wide column nocolumn-large">
     <div class="bg-beige" id="krzyszkowska-beige">
       <div class="content column">
-        <div class="title">
+        <h2 class="title">
           <?= $part['title'] ?>
-        </div>
+        </h2>
       </div>
       <div class="rmin"></div>
       <div class="text text--width text--large text-center column">

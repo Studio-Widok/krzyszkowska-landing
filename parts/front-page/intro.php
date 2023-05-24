@@ -1,8 +1,8 @@
 <div class="nop">
   <div class="content column">
-    <div class="title">
+    <h1 class="title">
       <?= $part['title'] ?>
-    </div>
+    </h1>
 
     <div class="more-tablet">
       <div class="r"></div>
@@ -29,9 +29,9 @@
 
   <div class="bg-pink" id="intro-pink">
     <div class="content column">
-      <div class="title">
+      <h2 class="title">
         <?= $part['title_2'] ?>
-      </div>
+      </h2>
 
       <div class="less-tablet">
         <div class="r"></div>
@@ -55,8 +55,7 @@
         <img src="<?= get_template_directory_uri() ?>/media/logo_tall_white.png"
           alt="logo" id="intro-logo-tall">
       </div>
-      <div class="less-phone">
-        <img
+      <div class="less-phone"> <img
           src="<?= get_template_directory_uri() ?>/media/logo_tall_left_white.png"
           alt="logo" id="intro-logo-tall-left">
       </div>
@@ -73,9 +72,9 @@
   <div class="content">
     <div class="column">
       <div class="r"></div>
-      <div class="title" id="intro-2-title">
+      <h2 class="title" id="intro-2-title">
         <?= $part['title_3'] ?>
-      </div>
+      </h2>
       <div class="r"></div>
     </div>
     <div class="flex flex-align-center flex-tablet column-outer"

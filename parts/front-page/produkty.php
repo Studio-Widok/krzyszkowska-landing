@@ -4,9 +4,9 @@
       <div class="product">
 
         <div class="column-inner-growing">
-          <div class="title">
+          <h2 class="title">
             <?= $product['title'] ?>
-          </div>
+          </h2>
           <div class="subtitle">
             <?= $product['subtitle'] ?>
           </div>
