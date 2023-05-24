@@ -166,3 +166,19 @@ footer {
     }
   }
 }
+
+#cookie-notice {
+  background-color: #fff !important;
+
+  .cookie-notice-container {
+    border-top: 1px solid #000;
+    color: #000 !important;
+
+    .cn-button {
+      border-radius: 0 !important;
+      border: 1px solid #000 !important;
+      background-color: #fff !important;
+      color: #000 !important;
+    }
+  }
+}

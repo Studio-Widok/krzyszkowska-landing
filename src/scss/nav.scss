@@ -23,8 +23,13 @@ nav {
     #nav-logo {
       max-width: 25%;
       width: 28em;
-      height: auto;
       flex-shrink: 1;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
     }
 
     #nav-links {
@@ -119,9 +124,14 @@ nav {
     #nav-logo-mobile {
       max-width: 60%;
       width: 18em;
-      height: auto;
       flex-shrink: 0;
       margin-right: auto;
+
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
     }
 
     .nav-link {
