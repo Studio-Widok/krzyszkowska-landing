@@ -41,9 +41,9 @@
           </div>
         </div>
 
-        <div class="r"></div>
+        <div class="r less-tablet"></div>
 
-        <div class="column-inner-growing">
+        <div class="column-inner-growing" style="position: relative;">
           <div class="flex flex-justify-center">
             <a href="<?= $product['button_link'] ?>" target="_blank"
               rel="noopener noreferrer">

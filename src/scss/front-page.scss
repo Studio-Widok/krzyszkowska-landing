@@ -196,7 +196,7 @@
 
 // produkty
 .product {
-  margin: min(10em, 10vw) 0;
+  margin: min(5em, 5vw) 0;
 
   &__image-col {
     position: relative;
@@ -267,6 +267,11 @@
 #part-supermoce {
   .title {
     line-height: 1.4;
+
+    p {
+      margin-top: .5em;
+      margin-bottom: .5em;
+    }
   }
 }
 
