@@ -13,39 +13,42 @@ $parts       = $parts ?? [
     <div id="nav-logo">
       <?php if (!is_front_page()) { ?>
         <a href="<?= get_the_permalink($frontPageId) ?>">
-        <?php } ?>
-        <img src="<?= get_template_directory_uri() ?>/media/logo_wide.png"
-          alt="logo">
-        <?php if (!is_front_page()) { ?>
-        </a>
-      <?php } ?>
-    </div>
-
-    <div id="nav-links">
-      <?php
-      foreach ($parts as $partKey => $part) {
-        if (is_front_page()) {
-          ?>
-          <div class="nav-link nav-link--scroll"
-            data-scroll-target="<?= $partKey ?>">
-            <?= $part['nav_title'] ?>
-          </div>
         <?php } else { ?>
-          <a href="<?= get_the_permalink($frontPageId) ?>#part-<?= $partKey ?>"
-            class="nav-link"> <?= $part['nav_title'] ?> </a>
-        <?php }
-      } ?>
-      <div class="nav-separator">|</div>
-      <?php
-      $langs = pll_the_languages([
-        'raw'          => true,
-        'hide_current' => true,
-      ]);
-      foreach ($langs as $lang) {
+          <div class="nav-link--scroll" data-scroll-target="intro">
+          <?php } ?>
+          <img src="<?= get_template_directory_uri() ?>/media/logo_wide.png"
+            alt="logo">
+          <?php if (!is_front_page()) { ?>
+        </a>
+      <?php } else { ?>
+      </div>
+    <?php } ?>
+  </div>
+
+  <div id="nav-links">
+    <?php
+    foreach ($parts as $partKey => $part) {
+      if (is_front_page()) {
         ?>
-        <a href="<?= $lang['url'] ?>" class="nav-link"><?= $lang['slug'] ?></a>
-      <?php } ?>
-    </div>
+        <div class="nav-link nav-link--scroll" data-scroll-target="<?= $partKey ?>">
+          <?= $part['nav_title'] ?>
+        </div>
+      <?php } else { ?>
+        <a href="<?= get_the_permalink($frontPageId) ?>#part-<?= $partKey ?>"
+          class="nav-link"> <?= $part['nav_title'] ?> </a>
+      <?php }
+    } ?>
+    <div class="nav-separator">|</div>
+    <?php
+    $langs = pll_the_languages([
+      'raw'          => true,
+      'hide_current' => true,
+    ]);
+    foreach ($langs as $lang) {
+      ?>
+      <a href="<?= $lang['url'] ?>" class="nav-link"><?= $lang['slug'] ?></a>
+    <?php } ?>
+  </div>
   </div>
 </nav>
 
@@ -54,22 +57,26 @@ $parts       = $parts ?? [
   <div id="nav-logo-mobile">
     <?php if (!is_front_page()) { ?>
       <a href="<?= get_the_permalink($frontPageId) ?>">
-      <?php } ?>
-      <img src="<?= get_template_directory_uri() ?>/media/logo_wide.png"
-        alt="logo">
-      <?php if (!is_front_page()) { ?>
+      <?php } else { ?>
+        <div class="nav-link--scroll" data-scroll-target="intro">
+        <?php } ?>
+        <img src="<?= get_template_directory_uri() ?>/media/logo_wide.png"
+          alt="logo">
+        <?php if (!is_front_page()) { ?>
       </a>
-    <?php } ?>
-  </div>
-
-  <?php foreach ($langs as $lang) { ?>
-    <a href="<?= $lang['url'] ?>" class="nav-link"><?= $lang['slug'] ?></a>
+    <?php } else { ?>
+    </div>
   <?php } ?>
-  <div id="burger">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+</div>
+
+<?php foreach ($langs as $lang) { ?>
+  <a href="<?= $lang['url'] ?>" class="nav-link"><?= $lang['slug'] ?></a>
+<?php } ?>
+<div id="burger">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
 </div>
 
 <div id="nav-spacer"></div>

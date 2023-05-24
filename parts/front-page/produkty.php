@@ -20,7 +20,8 @@
             <div class="product__colors">
               <?php foreach ($product['color'] as $key => $value) { ?>
                 <div class="product__color"
-                  style="background-color: <?= $value['color'] ?>;"></div>
+                  style="background-color: <?= $value['color'] ?>;">
+                  0<?= $key + 1 ?></div>
               <?php } ?>
             </div>
           </div>
@@ -44,7 +45,8 @@
 
         <div class="column-inner-growing">
           <div class="flex flex-justify-center">
-            <a href="<?= $product['button_link'] ?>">
+            <a href="<?= $product['button_link'] ?>" target="_blank"
+              rel="noopener noreferrer">
               <div class="button">
                 <?= pll__('kup teraz') ?>
               </div>

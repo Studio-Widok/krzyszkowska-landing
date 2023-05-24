@@ -53,7 +53,8 @@
       <?= widok_img($part['image_2'], ['srcset' => true, 'id' => 'krzyszkowska-beige-image', 'class' => 'img-full']) ?>
       <div class="r"></div>
       <div class="flex flex-justify-center">
-        <a href="<?= $part['button_link'] ?>">
+        <a href="<?= $part['button_link'] ?>" target="_blank"
+          rel="noopener noreferrer">
           <div class="button">
             <?= pll__('kup teraz') ?>
           </div>
